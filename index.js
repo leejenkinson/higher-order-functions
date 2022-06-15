@@ -54,6 +54,6 @@ const minOddSquare = Math.min(...oddSqaure);
 
 console.log(minOddSquare);
 
-const squareArray = numbers.map (n => {
-    return n**2}).filter(n => {
-        return n%2 != 0}).Math.min(...squareArray);
+const squareArray = numbers.map (n =>
+     n**2).filter(n =>
+         n%2 != 0).reduce((acc, next) => Math.min(acc, next));
